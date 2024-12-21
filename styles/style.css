@@ -6,9 +6,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 148px 1fr;
     align-items: center;
-    padding: 92px 24px 96px 24px;
+    padding: 97px 24px 91px 24px;
     font-size: 18px;
-    line-height: auto;
 }
 
 .header__menu {
@@ -41,11 +40,13 @@ body {
     width: 148px;
 }
 
-.header__address {
-    justify-self: right;
-    margin: 0;
+.address {
+    margin-right: 55px;
     display: block;
     max-width: 240.52px;
+}
+
+.header__address {
     justify-self: end;
 }
 
@@ -65,11 +66,13 @@ body {
     background-color: rgba(0 0 0 / 0.6);
     z-index: 1;
     position: absolute;
+    left: 0;
+
 }
 
 .cover__title {
     letter-spacing: 0.3em;
-    padding: 165px 50px 147px 50px;
+    padding: 165px 50px 132px 50px;
     position: relative;
     z-index: 1;
     text-transform: uppercase;
@@ -84,11 +87,13 @@ body {
 }                                           
 
 .aligned-text_center {
+    margin-top: 20px;
     text-align: center;
     line-height: 1;
 }
 
 .aligned-text_right {
+    margin-top: 20px;
     text-align: right;
     line-height: 1;
 }
@@ -123,8 +128,9 @@ body {
     z-index: 1;
     background-color: transparent;
     color: #FFFFFF;
-    border: 1px solid #FFFFFF;
+    border: 1px solid currentColor;
     font-size: 22px;
+    font-family: Raleway, sans-serif;
     text-transform: uppercase;
     min-width: 256px;
     min-height: 51px;
@@ -135,7 +141,7 @@ body {
 }
 
 .lots__heading {
-    padding-left: 64px;
+    padding-left: 40px;
     padding-bottom: 27px;
     font-size: 40px;
     text-transform: uppercase;
@@ -146,6 +152,7 @@ body {
     display: flex;
     gap: 25px;
     margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -216,11 +223,8 @@ body {
 
 .about {
     padding: 73px 24px 90px 24px;
-    min-height: 595px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 25px; 
-    
+    grid-template-columns: repeat(3, 1fr);    
 }
 
 .about__column {
@@ -228,14 +232,14 @@ body {
 }
 
 .about__logo {
-    padding: 35px 72px 30px 47px;
+    margin: 35px 72px 0px 47px;
     background-color: #000000;
     width: 240px;
     height: 240px;
     border-radius: 100%;
-    display: flex;
-    justify-content: center; 
+    display: flex; 
     align-items: center;
+    justify-content: center;
 }
 
 .about__logo-image {
@@ -244,8 +248,7 @@ body {
 }
 
 .about__title {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    margin-top: 136px;
     font-size: 40px;
     text-transform: uppercase;
     align-self: center;
@@ -253,6 +256,7 @@ body {
 }
 
 .about__text {
+    padding-top: 80px;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -263,8 +267,7 @@ body {
 }
 
 .footer {
-    padding: 90px 50px 88px 50px;
-    min-height: 98px;
+    padding: 90px 50px 0px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     display: grid;
@@ -273,9 +276,7 @@ body {
 
 .footer__address {
     justify-self: start;
-    margin: 0;
-    display: block;
-    max-width: 240.52px;
+
 }
 
 .footer__menu {
