@@ -19,10 +19,6 @@ body {
     list-style: none;
 }
 
-.header__link-active .header__link-list-item {
-    text-decoration: none;
-}
-
 .header__link-list {
     display: flex;
     justify-content: space-between;
@@ -32,6 +28,10 @@ body {
 }
 
 .header__link {
+    text-decoration: underline;
+}
+
+.header__link-active {
     text-decoration: none;
 }
 
@@ -44,6 +44,7 @@ body {
     margin-right: 55px;
     display: block;
     max-width: 240.52px;
+    font-style: normal;
 }
 
 .header__address {
@@ -204,7 +205,7 @@ body {
 }
 
 .lots__look-more-link {
-    padding-left: 64px;
+    padding-left: 40px;
     font-size: 20px;
     text-decoration: underline;
 }
@@ -297,7 +298,7 @@ body {
     list-style-type: none;
 }
 
-.footer__menu-link_active .footer__menu-list-item {
+.footer__menu-link_active {
     text-decoration: none;
 }
 
